@@ -1,0 +1,22 @@
+const my_name = "josh";
+const college = "KSR College";
+const year = 2027;
+let age = 21;
+let isstd= true;
+let assign;
+let empty = null;
+
+console.log(`I am ${my_name} from ${college} , ${year}`);
+let fav = 7;
+console.log(fav*2);
+
+console.log(typeof(my_name));
+console.log(typeof(college));
+console.log(typeof(year));
+console.log(typeof(age));
+console.log(typeof(fav));
+console.log(typeof(isstd));
+console.log(typeof(assign));
+console.log(typeof(empty));
+
+  
