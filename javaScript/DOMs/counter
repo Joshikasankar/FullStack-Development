@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="value">0</h2>
+    <button id = "plus">+</button>
+    <button id = "sub">-</button>
+    <button id = "reset">reset</button>
+   
+    <script>
+        let val = document.getElementById("value");
+        const inc = document.getElementById("plus");
+        const subt = document.getElementById("sub");
+        const resets = document.getElementById("reset");
+
+
+             let count = 0;
+             function display(){
+                val.textContent = count;
+                if(count<0){
+                        val.style.color = "red";
+                }
+                else if(count>10){
+                    val.style.color = "green";
+                }
+                else{
+                    val.style.color = "black";
+                }
+             }
+
+        function Changevalue(){
+           
+                count = count+1;
+               val.textContent = count ; 
+                display();
+        }inc.addEventListener("click",Changevalue);
+
+       
+        
+        function subtract(){
+            count = count -1;
+            val.textContent = count;
+            display();
+        }subt.addEventListener("click",subtract);
+
+        function rollback(){
+            count =0;
+            val.textContent = count;
+            display();
+        }resets.addEventListener("click",rollback);
+    
+    </script>
+</body>
+</html>
